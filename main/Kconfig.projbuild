@@ -1,0 +1,23 @@
+config EXAMPLE_WIFI_SSID
+    string "WiFi SSID"
+    default "SGHOUSE"
+    help
+      Enter the SSID (name) of the WiFi network you want to connect to.
+
+config EXAMPLE_WIFI_PASSWORD
+    string "WiFi Password"
+    default "sghouse12345"
+    help
+      Enter the password for the WiFi network.
+
+config ESP_TLS_INSECURE
+    bool "Enable insecure TLS connection"
+    default y
+    help
+      Enable this option to allow insecure TLS connections.
+
+config ESP_TLS_SKIP_SERVER_CERT_VERIFY
+    bool "Skip server certificate verification"
+    default y
+    help
+      Enable this option to skip verification of the server's certificate.
